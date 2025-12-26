@@ -1,0 +1,6 @@
+attempts: 0
+show-title-on-join: true
+title-main: "Попытка #%attempts%"
+title-sub: "аа"
+join-title-main: "Попытка #%attempts%"
+join-title-sub: "а"
