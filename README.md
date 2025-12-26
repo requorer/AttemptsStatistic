@@ -6,12 +6,12 @@ The attempt counter for the hardcore minecraft server, outputs the attempt numbe
 
 | Setup | Default | Description |
 |--------------|---------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `attempts`     | `int` | Number of attempts |
+| `attempts`     | `0` | Number of attempts |
 | `show-title-on-join` | `true` | should the attempt number be shown when the player joins       |
-| `title-main` | `string` | the main title that appears on a new attempt |
-| `title-sub` | `string` | the sub title that appears on a new attempt |
-| `join-title-main` | `string` | the main title that appears on a player joins |
-| `join-title-sub` | `string` | the sub title that appears on a player joins |
+| `title-main` | `Попытка #%attempts%` | the main title that appears on a new attempt |
+| `title-sub` | `aa` | the sub title that appears on a new attempt |
+| `join-title-main` | `Попытка #%attempts%` | the main title that appears on a player joins |
+| `join-title-sub` | `a` | the sub title that appears on a player joins |
 
 ## Commands
 
