@@ -60,7 +60,8 @@ public class AttemptsStatistic extends JavaPlugin implements Listener {
             // если в конфиге фигня — по умолчанию HARD
             difficulty = Difficulty.HARD;
         }
-        
+
+        world.setDifficulty(difficulty);
         String main = getConfig().getString("title-main", "Попытка #%attempts%");
         String sub = getConfig().getString("title-sub", "Удачи!");
 
@@ -141,3 +142,4 @@ public class AttemptsStatistic extends JavaPlugin implements Listener {
     }
 
 }
+
