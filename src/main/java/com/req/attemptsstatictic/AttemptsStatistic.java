@@ -49,7 +49,18 @@ public class AttemptsStatistic extends JavaPlugin implements Listener {
     @EventHandler
     public void onPlayerRespawn(PlayerRespawnEvent event) {
         Player respawned = event.getPlayer();
+        World world = respawned.getWorld();
 
+        // читаем сложность из конфига
+        String diffName = getConfig().getString("difficulty-on-respawn", "HARD");
+        Difficulty difficulty;
+        try {
+            difficulty = Difficulty.valueOf(diffName.toUpperCase());
+        } catch (IllegalArgumentException e) {
+            // если в конфиге фигня — по умолчанию HARD
+            difficulty = Difficulty.HARD;
+        }
+        
         String main = getConfig().getString("title-main", "Попытка #%attempts%");
         String sub = getConfig().getString("title-sub", "Удачи!");
 
@@ -128,4 +139,5 @@ public class AttemptsStatistic extends JavaPlugin implements Listener {
 
         return false;
     }
+
 }
