@@ -1,6 +1,7 @@
 attempts: 0
+difficulty-on-respawn: HARD  # PEACEFUL / EASY / NORMAL / HARD
 show-title-on-join: true
 title-main: "Попытка #%attempts%"
-title-sub: "аа"
+title-sub: "☠️"
 join-title-main: "Попытка #%attempts%"
-join-title-sub: "а"
+join-title-sub: "☠️"
